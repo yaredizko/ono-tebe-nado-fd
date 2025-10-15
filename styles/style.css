@@ -15,7 +15,6 @@
 
 .menu-list {
   list-style-type: circle;
-  
 }
 
 .menu-list-header {
@@ -58,7 +57,7 @@
   align-items: flex-start;
 }
 
-.header-address{
+.header-address {
   margin-right: 50px;
 }
 
@@ -75,7 +74,7 @@
   position: relative;
 }
 
-.text-container-cover{
+.text-container-cover {
   max-height: 390;
 }
 
@@ -91,7 +90,6 @@
   line-height: 115px;
   color: white;
   line-height: 1.3;
-  
 }
 
 .description {
@@ -143,7 +141,6 @@
   list-style-type: none;
   position: relative;
   margin-top: 27px;
-
 }
   
 .card-title {
@@ -153,7 +150,6 @@
   color: white;
   margin: 48px 40px 466px;
   text-underline-position: under;
-  
 }
 
 .card-description {
@@ -205,7 +201,6 @@
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 25px;
-  
 }
 
 .about-logo {
@@ -258,14 +253,11 @@
 .menu-list-footer {
   list-style-type: none;
   justify-self: center;
-
-
 }
 
 .footer-address {
   justify-self:auto;
   padding-left: 50px;
-
 }
 
 .social-list {
@@ -273,8 +265,7 @@
   display: flex;
   justify-content: space-between;
   gap: 48px;
-  list-style-type: none; 
-  
+  list-style-type: none;  
 }
 
 .social-yt {
