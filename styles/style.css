@@ -45,10 +45,6 @@
   height: 105px;
 }
 
-.header_logo {
-  background-image: url(../images/logo-black.svg);
-}
-
 .address {
   max-width: 240px;
   justify-self: end;
