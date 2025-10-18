@@ -2,7 +2,7 @@
 
 
 .header {
-  height: 293px;
+  margin: 92px 0 96px;
   display: grid;
   font-size: 18px;
   grid-template-columns: 1fr min-content 1fr;
@@ -22,21 +22,15 @@
   gap: 33px;
 }
 
-.menu-cover {
+.menu-item {
+  text-decoration-skip-ink: none;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.menu-item-no-bullet {
   text-decoration: none;
   list-style-type: none;
-}
-
-.menu-lots {
-  text-decoration-skip-ink: none;
-  text-decoration: underline;
-  text-underline-position: under;
-}
-
-.menu-about {
-  text-decoration-skip-ink: none;
-  text-decoration: underline;
-  text-underline-position: under;
 }
 
 .logo {
@@ -51,6 +45,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-style: normal;
+}
+
+.address-links {
+  text-decoration-skip-ink: none;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .header-address {
@@ -58,20 +59,24 @@
 }
 
 .cover {
-  height: 757px;
   background-image: url('../images/cover.jpg');
   background-size:cover;
   background-position-x:center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .overlay {
-  height: 757px;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
   background-color:rgba(0, 0, 0, 0.6);
-  position: relative;
+  z-index: 1;
 }
 
 .text-container-cover {
-  max-height: 390;
+  position: relative;
+  z-index: 2;
 }
 
 .title_text {
@@ -87,10 +92,23 @@
   color: white;
 }
 
+.title_text_left {
+  text-align: left;
+}
+
+.title_text_center{
+  text-align: center;
+}
+
+.title_text_right {
+  text-align: right;
+}
+
 .description {
-  color: white;
+  padding-bottom: 97px;
   position: relative;
-  bottom: 97px;
+  z-index: 2;
+  color: white;
   font-size: 22px;
   text-transform: uppercase;
   display: flex;
@@ -116,7 +134,6 @@
 
 .lots {
   margin: 180px 24px 0px 24px;
-  height: 723px;
   }
 
 .lots-text {
@@ -128,58 +145,62 @@
 .cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap:25px;
 }
 
 .card {
   width: 334px;
-  height: 596px;
+  min-height: 596px;
   list-style-type: none;
   position: relative;
-  margin-top: 27px;
+  }
+
+.card-link {
+  height: 100%;
 }
+
+.card-cover {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   
+}
+
 .card-title {
-  height: 254px;
+  position: relative;
+  z-index: 2;
   font-size: 22px;
   text-transform: uppercase;
   color: white;
-  margin: 48px 40px 466px;
+  padding: 48px 40px 0;
+  text-decoration-skip-ink: none;
+  text-decoration: underline;
   text-underline-position: under;
 }
 
 .card-description {
-  position: absolute;
-  bottom: 0;
+  z-index: 2;
   color: white;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 48px;
   font-size: 20px;
-}
-
-.card-overlay {
-  background-color: rgb(0,0,0,0.6);
-  position: absolute;
-  width: 334px;
-  height: 596px;
 }
 
 .card-sinema {
   background: url(../images/card-lot-01.jpg);
-  background-size:cover;
-  background-position:center;
 }
 
 .card-book {
   background: url(../images/card-lot-02.jpg);
-  background-size:cover;
-  background-position:center;
 }
 
 .card-picture {
   background: url(../images/card-lot-03.jpg);
-  background-size:cover;
-  background-position:center;
 }
 
 .card-more {
@@ -190,8 +211,7 @@
 }
 
 .about {
-  margin: 120px 24px 180px;
-  height: 595px;
+  margin: 120px 24px 0;
   width: 1052px;
   display: grid;
   grid-template-columns: 334px 1fr;
@@ -238,7 +258,8 @@
 }
 
 .footer {
-  height: 180px;
+  margin-top: 120px;
+  margin-bottom: 82px;
   display: grid;
   font-size: 18px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -247,7 +268,7 @@
 
 .menu-list-footer {
   list-style-type: none;
-  justify-self: center;
+  text-align: center;
 }
 
 .footer-address {
@@ -263,20 +284,20 @@
   list-style-type: none;
 }
 
-.social-yt {
-  background-image: url(../images/yt.svg);
+.social-links {
   width: 48px;
   height: 48px ;
+  display: inline-block;
+}
+
+.social-yt {
+  background-image: url(../images/yt.svg);
 }
 
 .social-vk {
   background-image: url(../images/vk.svg);
-  width: 48px;
-  height: 48px ;
 }
 
 .social-p {
   background-image: url(../images/pinterest.svg);
-  width: 48px;
-  height: 48px ;
 }
