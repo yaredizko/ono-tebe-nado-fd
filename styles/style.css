@@ -40,7 +40,6 @@
 }
 
 .address {
-  max-width: 240px;
   justify-self: end;
   display: flex;
   flex-direction: column;
@@ -55,6 +54,7 @@
 }
 
 .header-address {
+  max-width: 240px;
   margin-right: 50px;
 }
 
@@ -87,12 +87,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 160px 20px 118px;
+  padding: 160px 20px 0 50px;
   font-size: 100px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 30px;
-  line-height: 115px;
+  line-height: 135px;
   color: white;
 }
 
@@ -109,7 +109,7 @@
 }
 
 .description {
-  padding-bottom: 61px;
+  padding: 90px 0 60px 0px;
   position: relative;
   z-index: 2;
   color: white;
@@ -122,11 +122,11 @@
 
 .description-text {
   letter-spacing: 0px;
-  word-spacing: 20px;
+  word-spacing: 19px;
 }
 
 .button-bet {
-  margin-right: -10px;
+  margin-right: -4px;
   background: transparent;
   border: 1px solid white;
   padding: 15px 40px 10px 35px;
@@ -143,6 +143,7 @@
 .lots-text {
   font-size: 40px;
   margin-left: 40px;
+  padding-bottom: 27px;
   text-transform: uppercase;
   }
 
@@ -166,8 +167,7 @@
 
 .card-cover {
   height: 100%;
-  background-size: cover;
-  background-position: center;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -197,14 +197,20 @@
 
 .card-sinema {
   background: url(../images/card-lot-01.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .card-book {
   background: url(../images/card-lot-02.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .card-picture {
   background: url(../images/card-lot-03.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .card-more {
@@ -240,29 +246,29 @@
   height: 114px;
 }
 
-.about-title {
-  text-transform: uppercase;
-  font-size: 40px;
-  margin-top: 136px;
-}
-
 .about-text {
   display: grid;
-  grid-template-rows: 3fr 7fr;
+  grid-template-rows: 1fr max-content;
   justify-content: end;
   align-items: end;
   padding-right: 3px;
 }
 
+.about-title {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 136px;
+  margin-bottom: 100px;
+}
+
 .about-description {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 1em;
   font-size: 20px;
+  gap: 25px;
 }
 
 .footer {
-  margin-top: 120px;
+  margin-top: 190px;
   margin-bottom: 82px;
   display: grid;
   font-size: 18px;
@@ -273,11 +279,11 @@
 .menu-list-footer {
   list-style-type: none;
   text-align: center;
+  padding-right: 50px;
 }
 
 .footer-address {
   justify-self:auto;
-  padding-left: 30px;
 }
 
 .social-list {
