@@ -60,6 +60,7 @@
 
 .cover {
   background-image: url('../images/cover.jpg');
+  max-height: 757px;
   background-size:cover;
   background-position-x:center;
   position: relative;
@@ -69,7 +70,10 @@
 
 .overlay {
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-color:rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
@@ -83,7 +87,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 160px 20px 200px 50px;
+  padding: 160px 20px 50px;
   font-size: 100px;
   font-weight: bold;
   text-transform: uppercase;
@@ -96,7 +100,7 @@
   text-align: left;
 }
 
-.title_text_center{
+.title_text_center {
   text-align: center;
 }
 
@@ -273,7 +277,7 @@
 
 .footer-address {
   justify-self:auto;
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 .social-list {
