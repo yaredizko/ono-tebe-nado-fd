@@ -29,8 +29,11 @@
 }
 
 .menu-item-no-bullet {
-  text-decoration: none;
   list-style-type: none;
+}
+
+.menu-item-activ {
+  text-decoration: none;
 }
 
 .logo {
@@ -62,7 +65,7 @@
 
 .cover {
   background-image: url('../images/cover.jpg');
-  max-height: 757px;
+  min-height: 757px;
   background-size:cover;
   background-position-x:center;
   position: relative;
@@ -111,7 +114,7 @@
 }
 
 .description {
-  padding: 90px 0 60px 0px;
+  padding: 90px 0 50px 0px;
   position: relative;
   z-index: 2;
   color: white;
@@ -168,12 +171,12 @@
 }
 
 .card-cover {
-  height: 100%;
-  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .card-title {
@@ -198,21 +201,15 @@
 }
 
 .card-sinema {
-  background: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card-book {
-  background: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card-picture {
-  background: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .card-more {
